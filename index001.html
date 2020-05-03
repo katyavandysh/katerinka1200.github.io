@@ -49,7 +49,22 @@
 						<div class="inner">
 							<header>
 								<h1><a href="index.html" id="logo">Програмування в Україні</a></h1>
+								<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 							</header>
+							<script>
+    $(function() {
+        $(window).on("scroll resize", function() {
+            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+            $(".progress-bar").css({
+                "width": (100 * o | 0) + "%"
+            });
+            $('progress')[0].value = o;
+        })
+    });
+</script>
+							
+							
+							
 						</div>
 						<nav id="nav">
 							<ul>
@@ -309,6 +324,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script type="text/javascript" src="https://spikmi.com/Widget?id=2692"></script>
+<progress value="0">
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+</progress>
 
 	</body>
 </html>
