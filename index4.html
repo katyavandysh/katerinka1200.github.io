@@ -7,7 +7,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	</head>
+	<script>
+    $(function() {
+        $(window).on("scroll resize", function() {
+            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+            $(".progress-bar").css({
+                "width": (100 * o | 0) + "%"
+            });
+            $('progress')[0].value = o;
+        })
+    });
+</script>
 	<body class="right-sidebar is-preload">
 		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-1a41a43b-40c9-410c-83c7-7dd451ffa8a1"></div>
@@ -363,5 +375,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script type="text/javascript" src="https://spikmi.com/Widget?id=2692"></script>
+<progress value="0">
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+</progress>
 	</body>
 </html>
