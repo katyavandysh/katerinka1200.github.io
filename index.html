@@ -2,16 +2,6 @@
 <html>
 	<head>
 		<script>
-    $(function() {
-        $(window).on("scroll resize", function() {
-            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
-            $(".progress-bar").css({
-                "width": (100 * o | 0) + "%"
-            });
-            $('progress')[0].value = o;
-        })
-    });
-</script>
 		
 		<title>It-технології 2020</title>
 		<script data-ad-client="ca-pub-7542415558882226" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -34,6 +24,16 @@ gtag('config', 'UA-119956982-1', { 'optimize_id': 'GTM-KXVKF7P'});
 		<script data-ad-client="ca-pub-7542415558882226" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	</head>
+	$(function() {
+        $(window).on("scroll resize", function() {
+            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+            $(".progress-bar").css({
+                "width": (100 * o | 0) + "%"
+            });
+            $('progress')[0].value = o;
+        })
+    });
+</script>
 	
 	<body class="homepage is-preload" >
 		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
