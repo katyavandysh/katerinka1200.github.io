@@ -1,6 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<script>
+    $(function() {
+        $(window).on("scroll resize", function() {
+            var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+            $(".progress-bar").css({
+                "width": (100 * o | 0) + "%"
+            });
+            $('progress')[0].value = o;
+        })
+    });
+</script>
 		
 		<title>It-технології 2020</title>
 		<script data-ad-client="ca-pub-7542415558882226" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -19,8 +30,11 @@ gtag('config', 'UA-119956982-1', { 'optimize_id': 'GTM-KXVKF7P'});
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 		<script data-ad-client="ca-pub-7542415558882226" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	</head>
+	
 	<body class="homepage is-preload" >
 		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-1a41a43b-40c9-410c-83c7-7dd451ffa8a1"></div>
@@ -404,5 +418,12 @@ wpac_init.push({widget: 'Comment', id: 24823});
 			<script src="assets/js/main.js"></script>
 			<script src="assets/php/index.php"></script>
 <script type="text/javascript" src="https://spikmi.com/Widget?id=2692"></script>
-	</body>
+						<script type="text/javascript" src="https://spikmi.com/Widget?id=2692"></script>
+<progress value="0">
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+</progress>
+						
+</body>
 </html>
